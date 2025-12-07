@@ -1,0 +1,13 @@
+# Cognitive Exocortex Desktop Client Dependencies
+
+# HTTP client
+httpx>=0.25.0
+
+# File watching
+watchdog>=3.0.0
+
+# CLI
+argparse
+
+# Optional: Rich terminal output
+rich>=13.0.0

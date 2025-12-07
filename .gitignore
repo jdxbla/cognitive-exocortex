@@ -1,0 +1,123 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Secrets & Credentials
+*secret*
+*credential*
+*.pem
+*.key
+config/secrets.yaml
+.aws/credentials
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Machine Learning
+models/
+*.h5
+*.pkl
+*.joblib
+checkpoints/
+
+# Data
+data/
+*.csv
+*.parquet
+*.arrow
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# SeaweedFS
+.seaweedfs/
+
+# Qdrant
+.qdrant/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# AWS
+.aws/
+
+# Airflow
+airflow/logs/
+airflow/dags/__pycache__/
+
+# Project Specific
+# (Add project-specific ignores here)
