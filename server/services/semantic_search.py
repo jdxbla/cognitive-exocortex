@@ -133,12 +133,12 @@ class SemanticSearchService:
             search_filter = Filter(must=filter_conditions)
 
         # Search in Qdrant
-        results = vector_db.client.search(
+        results = vector_db.client.query_points(
             collection_name=settings.qdrant_collection,
-            query_vector=query_embedding,
+            query=query_embedding,
             limit=max_results,
             query_filter=search_filter,
-        )
+        ).points
 
         # Convert to SearchResult
         search_results = []
@@ -170,11 +170,11 @@ class SemanticSearchService:
                 return []
 
             # Search for similar
-            results = vector_db.client.search(
+            results = vector_db.client.query_points(
                 collection_name=settings.qdrant_collection,
-                query_vector=point[0].vector,
+                query=point[0].vector,
                 limit=max_results + 1,  # +1 to exclude self
-            )
+            ).points
 
             # Convert and exclude self
             search_results = []
